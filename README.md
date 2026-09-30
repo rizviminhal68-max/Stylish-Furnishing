@@ -138,9 +138,9 @@ into `dist/` automatically.
 
 | Host | Config | Notes |
 | --- | --- | --- |
+| Vercel | `vercel.json` | Works as-is: framework, build command, output dir, SPA rewrite and cache/security headers |
 | Netlify / Cloudflare Pages | `public/_redirects` | Works as-is |
 | Apache, Hostinger, cPanel, GoDaddy | `public/.htaccess` | Also forces HTTPS, strips `www`, sets cache headers |
-| Vercel | — | Needs `vercel.json` or a build output override; add rewrites to `index.html` |
 | Nginx | — | Add `try_files $uri $uri/ /index.html;` in the server block |
 
 Then:
@@ -187,6 +187,8 @@ public/
   sitemap.xml       domain is a placeholder
   _redirects        SPA fallback for Netlify/Cloudflare
   .htaccess         SPA fallback + caching + security headers for Apache
+
+vercel.json         Vercel build settings, SPA rewrite and headers
 
 src/
   components/

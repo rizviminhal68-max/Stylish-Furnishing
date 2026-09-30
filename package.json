@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Marketing website for Stylish Furnishing - sofa and furniture repair and furnishing services in Gurugram.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
