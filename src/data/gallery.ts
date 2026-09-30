@@ -2,21 +2,22 @@
  * ------------------------------------------------------------------
  * GALLERY — EDIT HERE
  * ------------------------------------------------------------------
- * PLACEHOLDER PHOTOS ARE IN USE. No project descriptions, locations
- * or client names have been invented — each caption describes only
- * what the photograph shows.
+ * These are stock photographs, used as samples. No project
+ * descriptions, locations or client names have been invented — each
+ * caption describes only what the photograph shows, and the alt text
+ * is written the same way.
  *
- * TO GO LIVE WITH REAL WORK:
+ * TO SWAP IN THE CLIENT'S OWN WORK:
  * 1. Delete every file in /public/images/gallery.
- * 2. Add the client's own job photos there as .webp (ideally landscape
- *    3:2 and portrait 3:4), naming them like
+ * 2. Add the real job photos there as .webp (ideally landscape 3:2 and
+ *    portrait 3:4), naming them like
  *    "sofa-fabric-change-golf-course-road-01".
  * 3. Replace the entries below. `src` is the large file, `srcSm` is a
  *    smaller version for phones — having both keeps the page fast.
  * 4. Write a real, specific `alt` for each photo. That is the single
  *    biggest thing that helps this page rank in image search.
- * 5. Set `placeholder: false` on each entry and delete
- *    `GALLERY_PLACEHOLDER_NOTICE` usage in src/pages/Gallery.tsx.
+ * 5. Update the "by Stylish Furnishing" wording in the Gallery page
+ *    meta description (src/pages/Gallery.tsx).
  */
 
 export type GalleryCategory =
@@ -36,7 +37,6 @@ export type GalleryItem = {
   category: GalleryCategory;
   /** Intrinsic ratio as width/height, used to reserve space and avoid layout shift. */
   ratio: number;
-  placeholder: boolean;
 };
 
 export const galleryCategories: GalleryCategory[] = [
@@ -47,10 +47,6 @@ export const galleryCategories: GalleryCategory[] = [
   'Before & After',
 ];
 
-/** Shown above the gallery so nobody mistakes the samples for real jobs. */
-export const GALLERY_PLACEHOLDER_NOTICE =
-  'Sample photos for now. Replace these with pictures of your own completed work before publishing.';
-
 export const galleryItems: GalleryItem[] = [
   {
     src: '/images/gallery/sofa-repair-01.webp',
@@ -59,7 +55,6 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Fabric sofa, repaired and re-covered',
     category: 'Sofa Repair',
     ratio: 1.5,
-    placeholder: true,
   },
   {
     src: '/images/gallery/upholstery-01.webp',
@@ -68,7 +63,6 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Button tufting and stitching detail',
     category: 'Upholstery',
     ratio: 1.5,
-    placeholder: true,
   },
   {
     src: '/images/gallery/furniture-work-01.webp',
@@ -77,7 +71,6 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Furniture repair work in progress',
     category: 'Furniture Work',
     ratio: 1.5,
-    placeholder: true,
   },
   {
     src: '/images/gallery/sofa-repair-02.webp',
@@ -86,7 +79,6 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Seating area after reupholstery',
     category: 'Sofa Repair',
     ratio: 1.5,
-    placeholder: true,
   },
   {
     src: '/images/gallery/before-after-01.webp',
@@ -95,7 +87,6 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Warm neutral finish on a sofa corner',
     category: 'Before & After',
     ratio: 1.5,
-    placeholder: true,
   },
   {
     src: '/images/gallery/upholstery-02.webp',
@@ -104,7 +95,6 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Leatherette on recliner chairs',
     category: 'Upholstery',
     ratio: 1.5,
-    placeholder: true,
   },
   {
     src: '/images/gallery/fabric-change-01.webp',
@@ -113,7 +103,6 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Neutral fabric change on a sofa set',
     category: 'Fabric Change',
     ratio: 1.5,
-    placeholder: true,
   },
   {
     src: '/images/gallery/furniture-work-02.webp',
@@ -122,7 +111,6 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Joinery and wood shaping work',
     category: 'Furniture Work',
     ratio: 1.5,
-    placeholder: true,
   },
   {
     src: '/images/gallery/sofa-repair-03.webp',
@@ -131,7 +119,6 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Daylight finish on a reupholstered sofa',
     category: 'Sofa Repair',
     ratio: 0.75,
-    placeholder: true,
   },
   {
     src: '/images/gallery/upholstery-03.webp',
@@ -140,7 +127,6 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Leather armchair, seat and back reworked',
     category: 'Upholstery',
     ratio: 0.75,
-    placeholder: true,
   },
   {
     src: '/images/gallery/before-after-02.webp',
@@ -149,7 +135,6 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Before and after: full fabric change',
     category: 'Before & After',
     ratio: 1.5,
-    placeholder: true,
   },
   {
     src: '/images/gallery/furniture-work-03.webp',
@@ -158,7 +143,6 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Complete furnishing of a living room',
     category: 'Furniture Work',
     ratio: 1.39,
-    placeholder: true,
   },
   {
     src: '/images/gallery/fabric-change-02.webp',
@@ -167,7 +151,6 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Fabric changed to a light neutral shade',
     category: 'Fabric Change',
     ratio: 1.5,
-    placeholder: true,
   },
   {
     src: '/images/gallery/upholstery-04.webp',
@@ -176,7 +159,6 @@ export const galleryItems: GalleryItem[] = [
     caption: 'Seat cushions re-covered to match',
     category: 'Upholstery',
     ratio: 1.31,
-    placeholder: true,
   },
 ];
 

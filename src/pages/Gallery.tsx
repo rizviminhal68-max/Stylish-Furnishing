@@ -1,6 +1,4 @@
-import { Info } from 'lucide-react';
 import { site } from '@/config/site';
-import { GALLERY_PLACEHOLDER_NOTICE, galleryItems } from '@/data/gallery';
 import { useSeo } from '@/lib/seo';
 import { breadcrumbSchema, localBusinessSchema } from '@/lib/structuredData';
 import { Container } from '@/components/ui/Container';
@@ -8,8 +6,6 @@ import { PageHero } from '@/components/ui/PageHero';
 import { GalleryGrid } from '@/components/gallery/GalleryGrid';
 import { CallButton, WhatsappButton } from '@/components/ui/CtaButtons';
 import { CtaBand } from '@/components/shared/CtaBand';
-
-const showPlaceholderNotice = galleryItems.some((i) => i.placeholder);
 
 export default function Gallery() {
   useSeo({
@@ -49,13 +45,6 @@ export default function Gallery() {
 
       <section className="bg-sand-50 py-12 sm:py-16 lg:py-20">
         <Container>
-          {showPlaceholderNotice && (
-            <p className="mb-8 flex items-start gap-3 rounded-xl border border-brass-300 bg-brass-100/50 p-4 text-sm text-ink-700">
-              <Info className="mt-0.5 size-[1.15rem] shrink-0 text-brass-700" aria-hidden="true" />
-              <span>{GALLERY_PLACEHOLDER_NOTICE}</span>
-            </p>
-          )}
-
           <GalleryGrid />
         </Container>
       </section>
