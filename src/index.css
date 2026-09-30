@@ -1,0 +1,225 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------
+   FONTS — self-hosted for speed (no render-blocking third-party
+   request, works on slow Indian mobile networks). Latin subset only.
+   ------------------------------------------------------------------ */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('/fonts/manrope-latin-variable.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500 800;
+  font-display: swap;
+  src: url('/fonts/playfair-display-latin-variable.woff2') format('woff2');
+}
+
+/* ------------------------------------------------------------------
+   DESIGN TOKENS
+   Warm charcoal + cream + muted brass. Edit here to re-theme.
+   ------------------------------------------------------------------ */
+@theme {
+  --font-sans:
+    'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, 'Times New Roman', serif;
+
+  /* Warm charcoal — main text and dark surfaces */
+  --color-ink-50: #f6f4f1;
+  --color-ink-100: #ebe7e1;
+  --color-ink-200: #d8d1c8;
+  --color-ink-300: #bab1a4;
+  --color-ink-400: #978c7c;
+  --color-ink-500: #756a5b;
+  --color-ink-600: #5a5145;
+  --color-ink-700: #443d34;
+  --color-ink-800: #2b2621;
+  --color-ink-900: #1b1815;
+  --color-ink-950: #12100e;
+
+  /* Cream / sand — page backgrounds */
+  --color-sand-50: #fdfbf7;
+  --color-sand-100: #f7f2e9;
+  --color-sand-200: #efe7d8;
+  --color-sand-300: #e2d6c0;
+  --color-sand-400: #cdbba0;
+
+  /* Muted brass — accent, used sparingly */
+  --color-brass-100: #f6ecd8;
+  --color-brass-200: #ecdcb6;
+  --color-brass-300: #e5cfa0;
+  --color-brass-400: #d8b87a;
+  --color-brass-500: #c29e5b;
+  --color-brass-600: #a6803f;
+  --color-brass-700: #7e612e;
+
+  /* Official WhatsApp green */
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #1da851;
+
+  --shadow-soft: 0 1px 2px rgb(27 24 21 / 0.04), 0 8px 24px -12px rgb(27 24 21 / 0.12);
+  --shadow-lift: 0 2px 4px rgb(27 24 21 / 0.05), 0 18px 40px -18px rgb(27 24 21 / 0.22);
+  --shadow-fab: 0 6px 20px -6px rgb(27 24 21 / 0.35);
+
+  --animate-fade-up: fade-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-fade-in: fade-in 0.5s ease-out both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ------------------------------------------------------------------
+   BASE
+   ------------------------------------------------------------------ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Stops the sticky header covering the target of an in-page link */
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-sand-50);
+    color: var(--color-ink-800);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    color: var(--color-ink-900);
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Visible, consistent focus ring everywhere */
+  :focus-visible {
+    outline: 2px solid var(--color-brass-600);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Don't show the ring for mouse users on plain elements */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  ::selection {
+    background-color: var(--color-brass-200);
+    color: var(--color-ink-900);
+  }
+
+  /* Prevent the horizontal jump when a scrollbar appears/disappears */
+  html {
+    scrollbar-gutter: stable;
+  }
+}
+
+@layer components {
+  /* Small uppercase label above a section heading */
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-brass-700);
+  }
+
+  .eyebrow::before {
+    content: '';
+    height: 1px;
+    width: 1.75rem;
+    background-color: var(--color-brass-500);
+  }
+
+  /* A warm hairline used to separate sections */
+  .rule {
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--color-sand-300) 15%,
+      var(--color-sand-300) 85%,
+      transparent
+    );
+  }
+}
+
+@layer utilities {
+  /* Faint woven texture for dark sections — pure CSS, no image request */
+  .texture-grain {
+    background-image:
+      radial-gradient(
+        circle at 20% 20%,
+        rgb(255 255 255 / 0.05) 0,
+        transparent 45%
+      ),
+      radial-gradient(
+        circle at 80% 0%,
+        rgb(216 184 122 / 0.08) 0,
+        transparent 40%
+      );
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* ------------------------------------------------------------------
+   REDUCED MOTION — honour the user's system setting
+   ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

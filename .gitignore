@@ -1,0 +1,9 @@
+node_modules
+dist
+dist-ssr
+dist-smoke
+*.local
+.DS_Store
+.vite
+node_modules/.tmp
+*.log

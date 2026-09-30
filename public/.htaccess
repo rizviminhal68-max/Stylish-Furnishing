@@ -1,0 +1,46 @@
+# Stylish Furnishing — Apache config (Hostinger, GoDaddy, cPanel, shared hosting).
+# Rewrite every request that is not a real file to index.html so that
+# React Router routes such as /contact and /guides/<slug> work on refresh.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Force HTTPS and strip www so there is only one canonical URL.
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^(.*)$ https://stylishfurnishing.in/$1 [R=301,L]
+  RewriteCond %{HTTP_HOST} ^www\.stylishfurnishing\.in$ [NC]
+  RewriteRule ^(.*)$ https://stylishfurnishing.in/$1 [R=301,L]
+
+  # Never rewrite real files or directories.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Hashed build assets are safe to cache forever.
+  <FilesMatch "\.(js|css|woff2|webp|jpg|jpeg|png|svg|avif)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # HTML must always be revalidated so deploys are picked up immediately.
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml application/xml
+</IfModule>
+
+ErrorDocument 404 /index.html

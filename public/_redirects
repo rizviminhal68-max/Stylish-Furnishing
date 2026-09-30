@@ -1,0 +1,5 @@
+# SPA fallback — every route (e.g. /contact, /guides/how-much-does-sofa-repair-cost-in-gurugram)
+# must serve index.html so React Router can take over.
+# Used by Netlify, Cloudflare Pages and most static hosts.
+# If your host uses .htaccess instead, that file is already provided.
+/*    /index.html   200

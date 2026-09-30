@@ -1,0 +1,12 @@
+# Stylish Furnishing — https://www.stylishfurnishing.in
+#
+# CHANGE THE SITEMAP URL BELOW to the real production domain before launch.
+# The same domain appears in: src/config/site.ts, index.html (canonical and
+# og:url) and public/sitemap.xml.
+
+User-agent: *
+Allow: /
+
+# No admin, API or draft areas exist on this site, so nothing is disallowed.
+
+Sitemap: https://www.stylishfurnishing.in/sitemap.xml
