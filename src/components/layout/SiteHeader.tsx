@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+﻿import { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, Phone, X } from 'lucide-react';
 import { navLinks, site } from '@/config/site';
@@ -110,7 +110,7 @@ export function SiteHeader() {
               href={site.phone.href}
               data-event="phone_click"
               data-event-label="header_call_now"
-              aria-label={`Call Stylish Furnishing on ${site.phone.display}`}
+              aria-label={`Call Mizan Sofa Repair on ${site.phone.display}`}
               className="inline-flex items-center gap-2 rounded-full bg-ink-900 px-5 py-2.5 text-[0.9375rem] font-semibold text-sand-50 shadow-soft transition duration-200 hover:bg-ink-800"
             >
               <Phone className="size-4" aria-hidden="true" />
@@ -124,7 +124,7 @@ export function SiteHeader() {
               href={site.phone.href}
               data-event="phone_click"
               data-event-label="header_mobile_call"
-              aria-label={`Call Stylish Furnishing on ${site.phone.display}`}
+              aria-label={`Call Mizan Sofa Repair on ${site.phone.display}`}
               className="grid size-10 place-items-center rounded-full bg-ink-900 text-sand-50 transition active:scale-95"
             >
               <Phone className="size-[1.15rem]" aria-hidden="true" />
@@ -184,11 +184,11 @@ export function SiteHeader() {
               href={site.phone.href}
               data-event="phone_click"
               data-event-label="mobile_menu_call"
-              aria-label={`Call Stylish Furnishing on ${site.phone.display}`}
+              aria-label={`Call Mizan Sofa Repair on ${site.phone.display}`}
               className="inline-flex items-center justify-center gap-2 rounded-full bg-ink-900 px-6 py-3.5 text-base font-semibold text-sand-50"
             >
               <Phone className="size-[1.1rem]" aria-hidden="true" />
-              Call Now — {site.phone.display}
+              Call Now â€” {site.phone.display}
             </a>
             <a
               href="https://wa.me/919599931360"
@@ -196,7 +196,7 @@ export function SiteHeader() {
               rel="noopener noreferrer"
               data-event="whatsapp_click"
               data-event-label="mobile_menu_whatsapp"
-              aria-label="Send a WhatsApp message to Stylish Furnishing"
+              aria-label="Send a WhatsApp message to Mizan Sofa Repair"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-6 py-3.5 text-base font-semibold text-ink-900"
             >
               <WhatsappGlyph />
@@ -213,7 +213,7 @@ export function SiteHeader() {
   );
 }
 
-/** WhatsApp's own mark — drawn inline so no extra request or icon font. */
+/** WhatsApp's own mark â€” drawn inline so no extra request or icon font. */
 export function WhatsappGlyph({ className = 'size-[1.1rem]' }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className={className}>

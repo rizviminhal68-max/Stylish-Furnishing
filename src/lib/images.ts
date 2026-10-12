@@ -1,4 +1,4 @@
-/**
+﻿/**
  * ------------------------------------------------------------------
  * IMAGE MANIFEST
  * ------------------------------------------------------------------
@@ -10,7 +10,7 @@
  * 1. Drop your file in /public/images (or /public/images/gallery).
  *    Recommended: .webp, named like the ones below, e.g.
  *    sofa-repair-gurugram.webp
- * 2. Update the entry below — change the filenames, the dimensions and,
+ * 2. Update the entry below â€” change the filenames, the dimensions and,
  *    most importantly, write a descriptive `alt` for screen readers.
  * 3. That is it. The layout picks up the new image automatically.
  *
@@ -31,7 +31,7 @@ export const images = {
   heroSofa: {
     lg: '/images/sofa-repair-gurugram.webp',
     sm: '/images/sofa-repair-gurugram-sm.webp',
-    alt: 'A modern fabric sofa in a bright living room, the type of seating Stylish Furnishing repairs and reupholsters across Gurugram.',
+    alt: 'A modern fabric sofa in a bright living room, the type of seating Mizan Sofa Repair repairs and reupholsters across Gurugram.',
   },
   sofaUpholstery: {
     lg: '/images/sofa-upholstery-gurugram.webp',
@@ -81,7 +81,7 @@ export const images = {
   ogImage: {
     lg: '/images/og-image.jpg',
     sm: '/images/og-image.jpg',
-    alt: 'Stylish Furnishing — sofa and furniture repair in Gurugram',
+    alt: 'Mizan Sofa Repair â€” sofa and furniture repair in Gurugram',
   },
 } as const satisfies Record<string, ImageAsset>;
 

@@ -47,7 +47,7 @@ export function Logo({ tone = 'dark', className, markOnly = false, current = fal
               isLight ? 'text-sand-50' : 'text-ink-900',
             )}
           >
-            Stylish<span className={isLight ? 'text-brass-300' : 'text-brass-600'}> Furnishing</span>
+            Mizan<span className={isLight ? 'text-brass-300' : 'text-brass-600'}> Sofa Repair</span>
           </span>
           <span
             className={cx(

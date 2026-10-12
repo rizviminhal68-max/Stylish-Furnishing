@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+﻿import { useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Clock, MapPin, MessageCircle, Phone } from 'lucide-react';
 import { site, whatsappLink } from '@/config/site';
@@ -23,8 +23,8 @@ export default function Contact() {
   }, [params]);
 
   useSeo({
-    title: 'Contact Stylish Furnishing — Sofa Repair in Gurugram',
-    description: `Call or WhatsApp Stylish Furnishing on ${site.phone.display} for sofa repair, upholstery and furniture furnishing services across ${site.location.areaServed}. Send a photo and we will advise.`,
+    title: 'Contact Mizan Sofa Repair â€” Sofa Repair in Gurugram',
+    description: `Call or WhatsApp Mizan Sofa Repair on ${site.phone.display} for sofa repair, upholstery and furniture furnishing services across ${site.location.areaServed}. Send a photo and we will advise.`,
     path: '/contact',
     jsonLd: [
       localBusinessSchema(),
@@ -56,7 +56,7 @@ export default function Contact() {
             <div className="lg:col-span-5">
               <h2 className="font-display text-2xl text-ink-900 sm:text-3xl">Reach us directly</h2>
               <p className="mt-3 text-[0.9375rem] leading-relaxed text-ink-600">
-                One number for calls and WhatsApp. There is no call centre — you speak to the
+                One number for calls and WhatsApp. There is no call centre â€” you speak to the
                 person who arranges and carries out the work.
               </p>
 
@@ -71,7 +71,7 @@ export default function Contact() {
                       href={site.phone.href}
                       data-event="phone_click"
                       data-event-label="contact_page_phone_card"
-                      aria-label={`Call Stylish Furnishing on ${site.phone.display}`}
+                      aria-label={`Call Mizan Sofa Repair on ${site.phone.display}`}
                       className="mt-2 block font-display text-2xl text-ink-900 transition-colors hover:text-brass-700"
                     >
                       {site.phone.display}
@@ -103,7 +103,7 @@ export default function Contact() {
                       rel="noopener noreferrer"
                       data-event="whatsapp_click"
                       data-event-label="contact_page_whatsapp_card"
-                      aria-label="Send a WhatsApp message to Stylish Furnishing"
+                      aria-label="Send a WhatsApp message to Mizan Sofa Repair"
                       className="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-6 py-3 font-semibold text-ink-900 transition hover:bg-whatsapp-dark hover:text-sand-50"
                     >
                       <MessageCircle className="size-4" aria-hidden="true" />
@@ -123,7 +123,7 @@ export default function Contact() {
                       {serviceAreas.areas.slice(0, 5).join(', ')} and surrounding areas.
                     </p>
                     <p className="mt-2 text-[0.9375rem] leading-relaxed text-ink-600">
-                      Outside this list? Ask anyway — we will tell you straight away.
+                      Outside this list? Ask anyway â€” we will tell you straight away.
                     </p>
                   </li>
                 </Reveal>

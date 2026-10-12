@@ -1,4 +1,4 @@
-import { ArrowRight, Check } from 'lucide-react';
+﻿import { ArrowRight, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { site } from '@/config/site';
 import { services } from '@/data/services';
@@ -46,7 +46,7 @@ export default function Services() {
             size="md"
             variant="whatsapp"
             eventLabel="services_hero_whatsapp"
-            message={`Hello Stylish Furnishing, I would like a quote for a service in ${site.location.city}.`}
+            message={`Hello Mizan Sofa Repair, I would like a quote for a service in ${site.location.city}.`}
           />
         </div>
       </PageHero>
@@ -165,7 +165,7 @@ export default function Services() {
                           size="md"
                           variant="outline"
                           eventLabel={`services_page_${service.slug}_whatsapp`}
-                          message={`Hello Stylish Furnishing, I need ${service.name.toLowerCase()} in ${site.location.city}. Please share details.`}
+                          message={`Hello Mizan Sofa Repair, I need ${service.name.toLowerCase()} in ${site.location.city}. Please share details.`}
                         >
                           Ask About This
                         </WhatsappButton>
@@ -203,9 +203,9 @@ export default function Services() {
             </div>
             <ul className="grid gap-4 sm:grid-cols-2 lg:col-span-7">
               {[
-                'Size and style of the sofa — two-seater, three-seater, sectional or sofa bed.',
-                'What actually needs doing — foam, fabric, stitching, frame, or a combination.',
-                'The material — plain woven fabric is quicker than patterned cloth or leatherette.',
+                'Size and style of the sofa â€” two-seater, three-seater, sectional or sofa bed.',
+                'What actually needs doing â€” foam, fabric, stitching, frame, or a combination.',
+                'The material â€” plain woven fabric is quicker than patterned cloth or leatherette.',
                 'Condition of the frame, webbing and existing foam before any work starts.',
                 'Whether the job can be done on site or the piece needs to go to the workshop.',
                 'How you want the finished result to look and how much daily use it takes.',
@@ -232,7 +232,7 @@ export default function Services() {
 
       <CtaBand
         title="Not sure which service you need?"
-        description="Send a photo of your sofa or furniture on WhatsApp. We will identify the problem, explain the options and give you a price for the work — no obligation to go ahead."
+        description="Send a photo of your sofa or furniture on WhatsApp. We will identify the problem, explain the options and give you a price for the work â€” no obligation to go ahead."
       />
     </>
   );

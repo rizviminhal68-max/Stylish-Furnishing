@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+﻿import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, Clock } from 'lucide-react';
 import { site } from '@/config/site';
@@ -154,7 +154,7 @@ export default function GuideArticle() {
                 <WhatsappButton
                   size="sm"
                   eventLabel="guide_article_whatsapp"
-                  message={`Hello Stylish Furnishing, I read your guide "${guide.title}" and have a question about my sofa in ${site.location.city}.`}
+                  message={`Hello Mizan Sofa Repair, I read your guide "${guide.title}" and have a question about my sofa in ${site.location.city}.`}
                 >
                   Ask About This
                 </WhatsappButton>

@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react';
+﻿import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { site } from '@/config/site';
 import { images } from '@/lib/images';
@@ -14,9 +14,9 @@ import { CtaBand } from '@/components/shared/CtaBand';
 
 export default function About() {
   useSeo({
-    title: 'About Stylish Furnishing — Furniture Repair in Gurugram',
+    title: 'About Mizan Sofa Repair â€” Furniture Repair in Gurugram',
     description:
-      'Stylish Furnishing repairs and reupholsterses sofas and furniture across Gurugram. Doorstep service, honest advice and work you can inspect before the job is called done.',
+      'Mizan Sofa Repair repairs and reupholsterses sofas and furniture across Gurugram. Doorstep service, honest advice and work you can inspect before the job is called done.',
     path: '/about',
     jsonLd: [
       localBusinessSchema(),
@@ -32,7 +32,7 @@ export default function About() {
       <PageHero
         eyebrow="About Us"
         title="Furniture repair, done properly at your home"
-        description="Stylish Furnishing is a local furniture and sofa furnishing service working across Gurugram. We repair, reupholster and finish sofas, chairs and wooden furniture at the customer's doorstep."
+        description="Mizan Sofa Repair is a local furniture and sofa furnishing service working across Gurugram. We repair, reupholster and finish sofas, chairs and wooden furniture at the customer's doorstep."
         trail={[
           { name: 'Home', path: '/' },
           { name: 'About', path: '/about' },
@@ -53,7 +53,7 @@ export default function About() {
               <div className="mt-7 space-y-5 text-[1.0625rem] leading-relaxed text-ink-600">
                 <p>
                   That is the work we do. We repair frames, replace foam, change fabric and
-                  reupholster sofas, chairs, headboards and other furniture — and we do it at your
+                  reupholster sofas, chairs, headboards and other furniture â€” and we do it at your
                   home or office, so the room is back in use quickly and you do not have to arrange
                   a van or a lift booking.
                 </p>
@@ -162,7 +162,7 @@ export default function About() {
             {[
               {
                 title: 'No invented numbers',
-                text: 'We do not quote “years of experience” or customer counts to win a job. Ask us what we have actually worked on and we will answer plainly.',
+                text: 'We do not quote â€œyears of experienceâ€ or customer counts to win a job. Ask us what we have actually worked on and we will answer plainly.',
               },
               {
                 title: 'No pressure',

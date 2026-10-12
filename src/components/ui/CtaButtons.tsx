@@ -1,4 +1,4 @@
-import { MessageCircle, Phone } from 'lucide-react';
+﻿import { MessageCircle, Phone } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { site, whatsappLink } from '@/config/site';
 import { ButtonLink, type ButtonSize, type ButtonVariant } from './ButtonLink';
@@ -12,7 +12,7 @@ type Common = {
   message?: string;
 };
 
-/** "Call Now" — dials the client's number. */
+/** "Call Now" â€” dials the client's number. */
 export function CallButton({
   size = 'md',
   variant = 'primary',
@@ -28,7 +28,7 @@ export function CallButton({
       className={className}
       event="phone_click"
       eventLabel={eventLabel}
-      ariaLabel={`Call Stylish Furnishing on ${site.phone.display}`}
+      ariaLabel={`Call Mizan Sofa Repair on ${site.phone.display}`}
       icon={<Phone className="size-[1.05em] shrink-0" aria-hidden="true" />}
     >
       {children}
@@ -36,7 +36,7 @@ export function CallButton({
   );
 }
 
-/** "WhatsApp Us" — opens wa.me with a pre-filled message. */
+/** "WhatsApp Us" â€” opens wa.me with a pre-filled message. */
 export function WhatsappButton({
   size = 'md',
   variant = 'whatsapp',
@@ -55,7 +55,7 @@ export function WhatsappButton({
       className={className}
       event="whatsapp_click"
       eventLabel={eventLabel}
-      ariaLabel="Send a WhatsApp message to Stylish Furnishing"
+      ariaLabel="Send a WhatsApp message to Mizan Sofa Repair"
       icon={<MessageCircle className="size-[1.05em] shrink-0" aria-hidden="true" />}
     >
       {children}

@@ -1,4 +1,4 @@
-import { site } from '@/config/site';
+﻿import { site } from '@/config/site';
 import { useSeo } from '@/lib/seo';
 import { breadcrumbSchema, localBusinessSchema } from '@/lib/structuredData';
 import { Container } from '@/components/ui/Container';
@@ -11,7 +11,7 @@ export default function Gallery() {
   useSeo({
     title: 'Sofa Repair & Upholstery Gallery in Gurugram',
     description:
-      'Photos of sofa repair, upholstery, fabric change and furniture work by Stylish Furnishing, Gurugram. Filter by service and tap any photo to view it larger.',
+      'Photos of sofa repair, upholstery, fabric change and furniture work by Mizan Sofa Repair, Gurugram. Filter by service and tap any photo to view it larger.',
     path: '/gallery',
     jsonLd: [
       localBusinessSchema(),
@@ -37,7 +37,7 @@ export default function Gallery() {
           <WhatsappButton
             size="md"
             eventLabel="gallery_hero_whatsapp"
-            message={`Hello Stylish Furnishing, I saw your gallery and would like to discuss similar work in ${site.location.city}.`}
+            message={`Hello Mizan Sofa Repair, I saw your gallery and would like to discuss similar work in ${site.location.city}.`}
           />
           <CallButton size="md" variant="outlineLight" eventLabel="gallery_hero_call" />
         </div>

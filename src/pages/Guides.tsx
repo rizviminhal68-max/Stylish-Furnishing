@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { ArrowRight, Clock } from 'lucide-react';
 import { site } from '@/config/site';
 import { guides } from '@/data/guides';
@@ -13,7 +13,7 @@ export default function Guides() {
   useSeo({
     title: 'Sofa Repair & Furniture Guides for Gurugram Homeowners',
     description:
-      'Practical guides on sofa repair costs, fabric choices, foam replacement and upholstery care from Stylish Furnishing, Gurugram. Plain answers, no sales pitch.',
+      'Practical guides on sofa repair costs, fabric choices, foam replacement and upholstery care from Mizan Sofa Repair, Gurugram. Plain answers, no sales pitch.',
     path: '/guides',
     jsonLd: [
       localBusinessSchema(),

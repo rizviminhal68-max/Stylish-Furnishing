@@ -1,4 +1,4 @@
-/**
+﻿/**
  * ------------------------------------------------------------------
  * SINGLE SOURCE OF TRUTH FOR BUSINESS DETAILS
  * ------------------------------------------------------------------
@@ -12,7 +12,7 @@
  */
 
 export const site = {
-  name: 'Stylish Furnishing',
+  name: 'Mizan Sofa Repair',
   domain: 'https://www.stylishfurnishing.in',
 
   /** Phone number. `national` is digits only (used for tel: and wa.me). */
@@ -27,7 +27,7 @@ export const site = {
     number: '919599931360',
     /** Default message pre-filled in WhatsApp so enquiries start faster. */
     message:
-      "Hello Stylish Furnishing, I need a sofa / furniture repair or upholstery service in Gurugram. Please share details.",
+      "Hello Mizan Sofa Repair, I need a sofa / furniture repair or upholstery service in Gurugram. Please share details.",
   },
 
   location: {

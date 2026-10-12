@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from 'react';
+﻿import { useState, type FormEvent } from 'react';
 import { LoaderCircle, Send, ShieldCheck } from 'lucide-react';
 import { site, whatsappLink } from '@/config/site';
 import { serviceOptions } from '@/data/services';
@@ -24,7 +24,7 @@ export type EnquiryPayload = {
  * nothing is lost.
  *
  * TO CONNECT A REAL BACKEND LATER (Formspree, a Google Form, your own
- * API endpoint, a Netlify/Vercel function — anything):
+ * API endpoint, a Netlify/Vercel function â€” anything):
  *   1. Fill in `sendEnquiry` below with a real request.
  *   2. Return { delivered: true } once the request succeeds.
  *   3. The form will then show a real "thank you" state instead of
@@ -137,7 +137,7 @@ export function EnquiryForm({ defaultService = '' }: { defaultService?: string }
         >
           <ShieldCheck className="size-6" />
         </span>
-        <h3 className="mt-4 font-display text-xl text-ink-900">Thanks — we have your enquiry</h3>
+        <h3 className="mt-4 font-display text-xl text-ink-900">Thanks â€” we have your enquiry</h3>
         <p className="mt-2.5 text-[0.9375rem] leading-relaxed text-ink-600">
           WhatsApp should have opened in a new tab with your details filled in. Press send there
           and we will reply shortly. If it did not open, please call us on{' '}
@@ -145,7 +145,7 @@ export function EnquiryForm({ defaultService = '' }: { defaultService?: string }
             href={site.phone.href}
             data-event="phone_click"
             data-event-label="contact_form_phone_fallback"
-            aria-label={`Call Stylish Furnishing on ${site.phone.display}`}
+            aria-label={`Call Mizan Sofa Repair on ${site.phone.display}`}
             className="font-semibold text-brass-700 underline underline-offset-4"
           >
             {site.phone.display}
@@ -255,7 +255,7 @@ export function EnquiryForm({ defaultService = '' }: { defaultService?: string }
                 "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%235a5145'%3E%3Cpath d='M5.5 7.5 10 12l4.5-4.5'/%3E%3C/svg%3E\")",
             }}
           >
-            <option value="">Select a service…</option>
+            <option value="">Select a serviceâ€¦</option>
             {serviceOptions.map((option) => (
               <option key={option} value={option}>
                 {option}
@@ -306,7 +306,7 @@ export function EnquiryForm({ defaultService = '' }: { defaultService?: string }
         ) : (
           <Send className="size-4" aria-hidden="true" />
         )}
-        {status === 'sending' ? 'Opening WhatsApp…' : 'Send via WhatsApp'}
+        {status === 'sending' ? 'Opening WhatsAppâ€¦' : 'Send via WhatsApp'}
       </button>
 
       <p className="mt-4 text-xs leading-relaxed text-ink-500">

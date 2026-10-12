@@ -1,4 +1,4 @@
-# Stylish Furnishing — https://www.stylishfurnishing.in
+﻿# Mizan Sofa Repair â€” https://www.stylishfurnishing.in
 #
 # CHANGE THE SITEMAP URL BELOW to the real production domain before launch.
 # The same domain appears in: src/config/site.ts, index.html (canonical and

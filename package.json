@@ -1,9 +1,9 @@
-{
+﻿{
   "name": "stylish-furnishing",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Marketing website for Stylish Furnishing - sofa and furniture repair and furnishing services in Gurugram.",
+  "description": "Marketing website for Mizan Sofa Repair - sofa and furniture repair and furnishing services in Gurugram.",
   "engines": {
     "node": ">=22.12.0"
   },

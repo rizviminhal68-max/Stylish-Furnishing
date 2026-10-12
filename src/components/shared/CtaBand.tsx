@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+﻿import type { ReactNode } from 'react';
 import { images } from '@/lib/images';
 import { site } from '@/config/site';
 import { Container } from '@/components/ui/Container';
@@ -82,7 +82,7 @@ export function CtaBand({
               size="lg"
               variant={dark ? 'whatsapp' : 'whatsapp'}
               eventLabel="cta_band_whatsapp"
-              message={`Hello Stylish Furnishing, I would like to discuss sofa repair or upholstery work in ${site.location.city}.`}
+              message={`Hello Mizan Sofa Repair, I would like to discuss sofa repair or upholstery work in ${site.location.city}.`}
               className="w-full sm:w-auto"
             >
               {secondaryLabel}

@@ -1,4 +1,4 @@
-import { MapPin, PhoneCall } from 'lucide-react';
+﻿import { MapPin, PhoneCall } from 'lucide-react';
 import { site } from '@/config/site';
 import { serviceAreas } from '@/data/serviceAreas';
 import { images } from '@/lib/images';
@@ -32,7 +32,7 @@ export function ServiceAreaSection() {
                       href={site.phone.href}
                       data-event="phone_click"
                       data-event-label="service_area_phone"
-                      aria-label={`Call Stylish Furnishing on ${site.phone.display}`}
+                      aria-label={`Call Mizan Sofa Repair on ${site.phone.display}`}
                       className="font-semibold text-ink-900 underline decoration-brass-400 underline-offset-4 transition-colors hover:text-brass-700"
                     >
                       {site.phone.display}
@@ -71,7 +71,7 @@ export function ServiceAreaSection() {
                   ))}
                 </ul>
                 <p className="mt-4 text-sm text-ink-500">
-                  Nearby localities not listed here are usually fine too — just ask.
+                  Nearby localities not listed here are usually fine too â€” just ask.
                 </p>
               </div>
             </Reveal>

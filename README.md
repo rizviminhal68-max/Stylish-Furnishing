@@ -1,12 +1,12 @@
-# Stylish Furnishing — website
+﻿# Mizan Sofa Repair â€” website
 
-Marketing website for **Stylish Furnishing**, a sofa repair, upholstery and furniture
+Marketing website for **Mizan Sofa Repair**, a sofa repair, upholstery and furniture
 furnishing business operating across Gurugram, Haryana.
 
 The site is built to generate phone calls and WhatsApp enquiries. Every page has a
 visible phone number, a WhatsApp button, and a working enquiry form.
 
-**Stack:** React 19 · TypeScript · Vite 8 · Tailwind CSS v4 · React Router 7 · Lucide icons.
+**Stack:** React 19 Â· TypeScript Â· Vite 8 Â· Tailwind CSS v4 Â· React Router 7 Â· Lucide icons.
 No CMS, no database, no tracking pixels enabled by default.
 
 ---
@@ -46,9 +46,9 @@ substitute for a real browser check.
 
 ---
 
-## Before you launch — required changes
+## Before you launch â€” required changes
 
-Work through this list top to bottom. Items 1–3 are **blocking**.
+Work through this list top to bottom. Items 1â€“3 are **blocking**.
 
 ### 1. Replace the placeholder domain
 
@@ -57,7 +57,7 @@ four files. Change all four, then rebuild.
 
 | File | What to change |
 | --- | --- |
-| `src/config/site.ts` | `site.domain` — used for canonical tags, Open Graph URLs and JSON-LD |
+| `src/config/site.ts` | `site.domain` â€” used for canonical tags, Open Graph URLs and JSON-LD |
 | `index.html` | 3 places: `<link rel="canonical">`, `og:url`, `og:image` |
 | `public/robots.txt` | 2 places: the header comment and the `Sitemap:` line |
 | `public/sitemap.xml` | every `<loc>`, plus the comment at the top |
@@ -70,13 +70,13 @@ grep -rn "stylishfurnishing.in" src index.html public
 ### 2. Replace the placeholder photography
 
 Every image in `public/images/` is **stock photography from Pexels**, used to show
-what finished work looks like. It is not Stylish Furnishing's work. The gallery and
+what finished work looks like. It is not Mizan Sofa Repair's work. The gallery and
 home page both carry a visible notice saying so, but that is not good enough for a
-live business site — clients may reasonably believe those are the company's own jobs.
+live business site â€” clients may reasonably believe those are the company's own jobs.
 
 - Files: `public/images/*.webp`, `public/images/gallery/*.webp`
 - Catalogue: `src/data/gallery.ts` (each entry has `src`, `alt`, `caption`, `category`)
-- Also replace `public/images/og-image.jpg` (the social share image, 1200×630)
+- Also replace `public/images/og-image.jpg` (the social share image, 1200Ã—630)
 - Optimise new photos: export **WebP**, longest edge ~1600px for gallery images and
   ~800px for card thumbnails, aim under 200KB each
 - Keep the same filenames and nothing else needs to change
@@ -91,7 +91,7 @@ There is **no backend and no email service connected to this project.** The form
 fully wired up and validated, but submitting it opens WhatsApp with the details
 pre-filled, and the visitor presses send. The form says so on screen.
 
-This is a deliberate, honest default for a small business — it works with zero
+This is a deliberate, honest default for a small business â€” it works with zero
 infrastructure and gets the enquiry into the WhatsApp inbox the business already
 checks. If you want real email delivery instead, see
 `src/components/contact/EnquiryForm.tsx`. The file has a documented
@@ -101,15 +101,15 @@ checks. If you want real email delivery instead, see
 ### 4. Optional, if the details are confirmed
 
 These are deliberately absent because they were never verified. Add them only with
-the client's confirmed facts — invented details can hurt local SEO and trust.
+the client's confirmed facts â€” invented details can hurt local SEO and trust.
 
-- [ ] **Street address** — would strengthen `LocalBusiness` structured data. Add to
+- [ ] **Street address** â€” would strengthen `LocalBusiness` structured data. Add to
       `site.location` in `src/config/site.ts` and to `localBusinessSchema()` in
       `src/lib/structuredData.ts`
-- [ ] **Opening hours** — the site currently says hours are agreed by appointment
-- [ ] **Real reviews** — no review markup is emitted, because none were supplied
-- [ ] **Years in business / team size** — no invented statistics appear anywhere
-- [ ] **Service prices** — the pricing section explains what affects a quote instead
+- [ ] **Opening hours** â€” the site currently says hours are agreed by appointment
+- [ ] **Real reviews** â€” no review markup is emitted, because none were supplied
+- [ ] **Years in business / team size** â€” no invented statistics appear anywhere
+- [ ] **Service prices** â€” the pricing section explains what affects a quote instead
       of publishing numbers that may be wrong
 
 ### 5. Analytics (optional)
@@ -123,7 +123,7 @@ tag is a two-step job:
 
 Events you get for free: `phone_click`, `whatsapp_click`, `nav_click`,
 `service_enquiry_click`, `contact_form_submit`, `guide_read`, `gallery_open` and
-`gallery_filter` — each with a `data-event-label` describing which button it was.
+`gallery_filter` â€” each with a `data-event-label` describing which button it was.
 
 ---
 
@@ -141,15 +141,15 @@ into `dist/` automatically.
 | Vercel | `vercel.json` | Works as-is: framework, build command, output dir, SPA rewrite and cache/security headers |
 | Netlify / Cloudflare Pages | `public/_redirects` | Works as-is |
 | Apache, Hostinger, cPanel, GoDaddy | `public/.htaccess` | Also forces HTTPS, strips `www`, sets cache headers |
-| Nginx | — | Add `try_files $uri $uri/ /index.html;` in the server block |
+| Nginx | â€” | Add `try_files $uri $uri/ /index.html;` in the server block |
 
 Then:
 
 1. Point the domain at the host
-2. Confirm HTTPS works and `www` redirects to the apex (or vice versa) — pick one
+2. Confirm HTTPS works and `www` redirects to the apex (or vice versa) â€” pick one
 3. Verify `/robots.txt` and `/sitemap.xml` are reachable
 4. Submit `https://yourdomain/sitemap.xml` in Google Search Console
-5. Set up a Google Business Profile — for a local service business this drives more
+5. Set up a Google Business Profile â€” for a local service business this drives more
    enquiries than the website does
 
 ---
@@ -168,7 +168,7 @@ Almost everything a non-developer would want to change lives in four data files.
 | `src/config/site.ts` | Business name, phone, WhatsApp, domain, navigation |
 
 The enquiry dropdown (`serviceOptions` in `src/data/services.ts`) is a hand-written
-array — if you add a service, add the dropdown entry too, or the option will be
+array â€” if you add a service, add the dropdown entry too, or the option will be
 missing from the form.
 
 Adding a guide: append an entry to `src/data/guides.ts`, then add its slug to
@@ -181,7 +181,7 @@ Adding a guide: append an entry to `src/data/guides.ts`, then add its slug to
 ```
 public/
   fonts/            self-hosted variable fonts (no Google Fonts request)
-  images/           photography — REPLACE BEFORE LAUNCH
+  images/           photography â€” REPLACE BEFORE LAUNCH
   favicon.svg
   robots.txt        domain is a placeholder
   sitemap.xml       domain is a placeholder
@@ -192,7 +192,7 @@ vercel.json         Vercel build settings, SPA rewrite and headers
 
 src/
   components/
-    ui/             design system: ButtonLink, Container, SmartImage, Reveal, Lightbox…
+    ui/             design system: ButtonLink, Container, SmartImage, Reveal, Lightboxâ€¦
     layout/         SiteHeader, SiteFooter, RootLayout, ScrollToTop
     contact/        EnquiryForm, FloatingContact (mobile bar + desktop buttons)
     home/           homepage sections
@@ -208,20 +208,20 @@ scripts/smoke.tsx   the route smoke test
 
 ### Key technical decisions
 
-- **Tailwind v4 via `@tailwindcss/vite`** — no `tailwind.config.js`; the theme lives
+- **Tailwind v4 via `@tailwindcss/vite`** â€” no `tailwind.config.js`; the theme lives
   in `@theme` inside `src/index.css`
-- **Self-hosted variable fonts** — Manrope for UI, Playfair Display for headings. No
+- **Self-hosted variable fonts** â€” Manrope for UI, Playfair Display for headings. No
   third-party font request, so no GDPR/privacy issue and no layout shift
-- **Lazy routes** — every page is a separate chunk, so the first load is the home page
+- **Lazy routes** â€” every page is a separate chunk, so the first load is the home page
   plus React (~113KB gzipped total)
 - **`<img>` with explicit `width`/`height` and lazy loading** (`src/components/ui/SmartImage.tsx`)
-  — deliberately not `next/image`; there is no framework here, and the responsive
+  â€” deliberately not `next/image`; there is no framework here, and the responsive
   `srcset` is generated by `src/lib/images.ts`
-- **Reveal on scroll** (`Reveal.tsx`) — content starts visible when the visitor has
+- **Reveal on scroll** (`Reveal.tsx`) â€” content starts visible when the visitor has
   asked for reduced motion, so nothing is ever hidden from someone who doesn't want
   animation
-- **Analytics by delegation** — no third-party script until you add an ID
-- **Inline SVG WhatsApp glyph** in the header, Lucide icons elsewhere — no brand asset
+- **Analytics by delegation** â€” no third-party script until you add an ID
+- **Inline SVG WhatsApp glyph** in the header, Lucide icons elsewhere â€” no brand asset
   pack needed
 
 ### Accessibility
@@ -231,7 +231,7 @@ Skip link, one `<h1>` per page, visible focus rings on every interactive element
 mobile menu, and `prefers-reduced-motion` respected globally. Colour contrast meets
 WCAG AA on the warm cream/charcoal palette.
 
-### SEO caveat — please read
+### SEO caveat â€” please read
 
 This is a **client-rendered single-page app**. `index.html` ships with correct
 static title/description/canonical/OG tags for the home page, and every other route
@@ -241,18 +241,18 @@ That is fine for Google, which renders JavaScript. It is **not** fine for:
 
 - **WhatsApp, Facebook, Slack and X link previews.** These scrapers do not run
   JavaScript, so a shared `/contact` or `/services` link will show the home page's
-  title and description — or none at all.
+  title and description â€” or none at all.
 - Some chat and in-app browsers, which may briefly show a blank page.
 
-If link previews on WhatsApp matter — and for a business whose main channel *is*
-WhatsApp, they probably do — the fix is to prerender each route. The cheapest route
+If link previews on WhatsApp matter â€” and for a business whose main channel *is*
+WhatsApp, they probably do â€” the fix is to prerender each route. The cheapest route
 is static prerendering of the seven top-level pages at build time. Until that is done,
 share links to the **home page URL**, which has correct static tags.
 
 Structured data emitted: `HomeAndConstructionBusiness` (as `LocalBusiness`),
 `WebSite`, `BreadcrumbList`, `FAQPage`, `ItemList` for service areas,
 `OfferCatalog` / `Offer` / `Service`, `ContactPoint`, and `Article` for guides.
-All built from confirmed facts only — see `src/lib/structuredData.ts`.
+All built from confirmed facts only â€” see `src/lib/structuredData.ts`.
 
 ---
 

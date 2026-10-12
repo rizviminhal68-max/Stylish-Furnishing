@@ -1,4 +1,4 @@
-import { Check, Clock, ShieldCheck } from 'lucide-react';
+﻿import { Check, Clock, ShieldCheck } from 'lucide-react';
 import { site } from '@/config/site';
 import { images } from '@/lib/images';
 import { trustPoints } from '@/data/whyChooseUs';
@@ -47,7 +47,7 @@ export function Hero() {
                 <WhatsappButton
                   size="lg"
                   eventLabel="hero_whatsapp"
-                  message={`Hello Stylish Furnishing, I need sofa repair or upholstery work in ${site.location.city}. Please share details.`}
+                  message={`Hello Mizan Sofa Repair, I need sofa repair or upholstery work in ${site.location.city}. Please share details.`}
                   className="w-full sm:w-auto"
                 />
               </div>
@@ -84,7 +84,7 @@ export function Hero() {
                 />
               </div>
 
-              {/* Overlapping detail card — adds depth without cluttering */}
+              {/* Overlapping detail card â€” adds depth without cluttering */}
               <div className="absolute -bottom-5 left-4 hidden w-56 rounded-xl border border-sand-200 bg-white/95 p-4 shadow-lift backdrop-blur-sm sm:block lg:-left-6">
                 <div className="flex items-center gap-2.5">
                   <span
@@ -104,7 +104,7 @@ export function Hero() {
                     href={site.phone.href}
                     data-event="phone_click"
                     data-event-label="hero_card_phone"
-                    aria-label={`Call Stylish Furnishing on ${site.phone.display}`}
+                    aria-label={`Call Mizan Sofa Repair on ${site.phone.display}`}
                     className="text-sm font-semibold text-ink-900 transition-colors hover:text-brass-700"
                   >
                     {site.phone.display}

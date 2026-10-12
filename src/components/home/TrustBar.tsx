@@ -1,4 +1,4 @@
-import { Home, Sofa, Building2, PhoneCall } from 'lucide-react';
+﻿import { Home, Sofa, Building2, PhoneCall } from 'lucide-react';
 import { site } from '@/config/site';
 import { Container } from '@/components/ui/Container';
 
@@ -11,11 +11,11 @@ const points = [
 
 /**
  * Slim factual strip under the hero. These are service facts, not
- * statistics — nothing here is a number that would need proving.
+ * statistics â€” nothing here is a number that would need proving.
  */
 export function TrustBar() {
   return (
-    <section aria-label="What Stylish Furnishing does" className="border-y border-sand-200 bg-white">
+    <section aria-label="What Mizan Sofa Repair does" className="border-y border-sand-200 bg-white">
       <Container>
         <ul className="grid grid-cols-2 divide-sand-200 lg:grid-cols-4 lg:divide-x">
           {points.map(({ icon: Icon, label }, i) => (

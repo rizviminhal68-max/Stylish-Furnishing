@@ -1,4 +1,4 @@
-import { Camera, MapPin, Wrench } from 'lucide-react';
+﻿import { Camera, MapPin, Wrench } from 'lucide-react';
 import { site } from '@/config/site';
 import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';
@@ -14,7 +14,7 @@ const whatToSend = [
   {
     icon: Wrench,
     title: 'A close-up of the problem',
-    text: 'The tear, the sagging seat, the loose joint — whatever made you get in touch.',
+    text: 'The tear, the sagging seat, the loose joint â€” whatever made you get in touch.',
   },
   {
     icon: MapPin,
@@ -42,7 +42,7 @@ export function EnquiryCta() {
               <WhatsappButton
                 size="lg"
                 eventLabel="enquiry_cta_whatsapp"
-                message={`Hello Stylish Furnishing, I am in ${site.location.city}. I would like to send photos of my sofa for a repair or upholstery quote.`}
+                message={`Hello Mizan Sofa Repair, I am in ${site.location.city}. I would like to send photos of my sofa for a repair or upholstery quote.`}
                 className="w-full sm:w-auto lg:w-auto"
               >
                 Send Photos on WhatsApp

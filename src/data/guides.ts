@@ -1,6 +1,6 @@
-/**
+﻿/**
  * ------------------------------------------------------------------
- * GUIDES / BLOG — EDIT HERE
+ * GUIDES / BLOG â€” EDIT HERE
  * ------------------------------------------------------------------
  * Each guide is one object. Add a new object to the array and it
  * appears on /guides automatically, with its own page at
@@ -37,9 +37,9 @@ export const guides: Guide[] = [
   {
     slug: 'how-much-does-sofa-repair-cost-in-gurugram',
     title: 'How Much Does Sofa Repair Cost in Gurugram?',
-    metaTitle: 'How Much Does Sofa Repair Cost in Gurugram? | Stylish Furnishing',
+    metaTitle: 'How Much Does Sofa Repair Cost in Gurugram? | Mizan Sofa Repair',
     metaDescription:
-      'The factors that decide the cost of sofa repair in Gurugram — size, material, condition and what needs replacing — explained by Stylish Furnishing.',
+      'The factors that decide the cost of sofa repair in Gurugram â€” size, material, condition and what needs replacing â€” explained by Mizan Sofa Repair.',
     excerpt:
       'Two sofas can need the same repair and cost very different amounts. Here is what actually decides the price, and how to get a figure you can rely on.',
     category: 'Sofa Repair',
@@ -54,12 +54,12 @@ export const guides: Guide[] = [
       {
         type: 'ul',
         items: [
-          'Size and style — a three-seater, a sectional, a sofa bed and a chaise each take a different amount of time to strip, cut and stitch.',
-          'What needs doing — foam replacement alone is one job; a full fabric change with new piping and cushion covers is another.',
-          'The material — plain woven fabric is quicker to work with than a patterned, striped or heavily textured cloth, which has to be matched across panels.',
-          'Leatherette or rexine — these are cut from sheets and stitched in panels, so the labour depends heavily on the shape of the sofa.',
-          'The condition of the frame and the old covering — old foam, hardened glue, webbing that has stretched and fixing material that has crumbled all add time.',
-          'Access — whether the sofa can be moved in the room, and whether the work can be done on site or needs to go to the workshop.',
+          'Size and style â€” a three-seater, a sectional, a sofa bed and a chaise each take a different amount of time to strip, cut and stitch.',
+          'What needs doing â€” foam replacement alone is one job; a full fabric change with new piping and cushion covers is another.',
+          'The material â€” plain woven fabric is quicker to work with than a patterned, striped or heavily textured cloth, which has to be matched across panels.',
+          'Leatherette or rexine â€” these are cut from sheets and stitched in panels, so the labour depends heavily on the shape of the sofa.',
+          'The condition of the frame and the old covering â€” old foam, hardened glue, webbing that has stretched and fixing material that has crumbled all add time.',
+          'Access â€” whether the sofa can be moved in the room, and whether the work can be done on site or needs to go to the workshop.',
         ],
       },
       { type: 'h2', text: 'Which jobs are usually the most economical' },
@@ -82,14 +82,14 @@ export const guides: Guide[] = [
         items: [
           'Photograph the whole piece, not just the damaged part.',
           'Photograph the problem close up in good light.',
-          'Tell us the approximate size — two-seater, three-seater, sectional, sofa bed.',
+          'Tell us the approximate size â€” two-seater, three-seater, sectional, sofa bed.',
           'Say how the sofa is used, and how many people sit on it regularly.',
           'Mention if the frame is solid, loose or creaking. This changes the answer more than anything else.',
         ],
       },
       {
         type: 'p',
-        text: 'Once we have that, we can talk about the work in specific terms and let you decide. If it turns out that replacing the sofa is the better call, we will mention that too — it is not worth spending money on a piece that will need the same work again in two years.',
+        text: 'Once we have that, we can talk about the work in specific terms and let you decide. If it turns out that replacing the sofa is the better call, we will mention that too â€” it is not worth spending money on a piece that will need the same work again in two years.',
       },
       {
         type: 'p',
@@ -102,7 +102,7 @@ export const guides: Guide[] = [
   {
     slug: 'sofa-repair-vs-buying-a-new-sofa',
     title: 'Sofa Repair vs Buying a New Sofa',
-    metaTitle: 'Sofa Repair vs Buying a New Sofa | Stylish Furnishing',
+    metaTitle: 'Sofa Repair vs Buying a New Sofa | Mizan Sofa Repair',
     metaDescription:
       'A practical way to decide whether your sofa is worth repairing or should be replaced. The questions to ask before spending money on either one.',
     excerpt:
@@ -123,9 +123,9 @@ export const guides: Guide[] = [
       {
         type: 'ul',
         items: [
-          'Frame solid, joints tight, webbing intact — repair is usually the right call.',
-          'Frame creaking or flexing under weight, legs wobbling — the frame work is now the main cost, and a new sofa may be more sensible.',
-          'Foam flattened but everything else fine — foam replacement is a small, well-spent job.',
+          'Frame solid, joints tight, webbing intact â€” repair is usually the right call.',
+          'Frame creaking or flexing under weight, legs wobbling â€” the frame work is now the main cost, and a new sofa may be more sensible.',
+          'Foam flattened but everything else fine â€” foam replacement is a small, well-spent job.',
         ],
       },
       { type: 'h2', text: 'Compare the shapes you actually need' },
@@ -136,7 +136,7 @@ export const guides: Guide[] = [
       { type: 'h2', text: 'The room matters too' },
       {
         type: 'p',
-        text: 'A sofa that has been repaired looks like a sofa that has been repaired. That is often completely fine, and it is genuinely satisfying. But if the rest of the room has moved on and the sofa is the last piece from ten years ago, a new one may be the change the room needs. Neither answer is wrong — it is a question of what you want the room to look like.',
+        text: 'A sofa that has been repaired looks like a sofa that has been repaired. That is often completely fine, and it is genuinely satisfying. But if the rest of the room has moved on and the sofa is the last piece from ten years ago, a new one may be the change the room needs. Neither answer is wrong â€” it is a question of what you want the room to look like.',
       },
       {
         type: 'note',
@@ -145,7 +145,7 @@ export const guides: Guide[] = [
       { type: 'h2', text: 'A rough way to think about it' },
       {
         type: 'p',
-        text: 'If what you need is a new fabric, new foam, new stitching or a repair to a leg, you are spending on extending something that works. If what you need is a different size, a different layout, or a piece that matches a room you have changed, you are spending on a purchase. Both are reasonable — they are just different decisions.',
+        text: 'If what you need is a new fabric, new foam, new stitching or a repair to a leg, you are spending on extending something that works. If what you need is a different size, a different layout, or a piece that matches a room you have changed, you are spending on a purchase. Both are reasonable â€” they are just different decisions.',
       },
       {
         type: 'p',
@@ -158,9 +158,9 @@ export const guides: Guide[] = [
   {
     slug: 'when-should-you-replace-sofa-foam',
     title: 'When Should You Replace Sofa Foam?',
-    metaTitle: 'When Should You Replace Sofa Foam? | Stylish Furnishing',
+    metaTitle: 'When Should You Replace Sofa Foam? | Mizan Sofa Repair',
     metaDescription:
-      'The signs that your sofa foam has gone, how to check it yourself, and what replacing it involves. From Stylish Furnishing, Gurugram.',
+      'The signs that your sofa foam has gone, how to check it yourself, and what replacing it involves. From Mizan Sofa Repair, Gurugram.',
     excerpt:
       'If your sofa feels flat but still looks fine, the foam is the most likely culprit. Here is how to tell, and what to expect when it is changed.',
     category: 'Sofa Foam',
@@ -185,7 +185,7 @@ export const guides: Guide[] = [
       { type: 'h2', text: 'How to check it yourself' },
       {
         type: 'p',
-        text: 'Undo the seat cushion covers if you can and press a hand firmly into the foam. Good foam pushes back and springs slowly back to shape. Worn foam takes the shape of your hand and stays there. If the foam feels crumbly, or if you can feel the webbing straps underneath through it, replacement is the only real option — no amount of reshaping will bring that back.',
+        text: 'Undo the seat cushion covers if you can and press a hand firmly into the foam. Good foam pushes back and springs slowly back to shape. Worn foam takes the shape of your hand and stays there. If the foam feels crumbly, or if you can feel the webbing straps underneath through it, replacement is the only real option â€” no amount of reshaping will bring that back.',
       },
       { type: 'h2', text: 'What replacing foam involves' },
       {
@@ -202,12 +202,12 @@ export const guides: Guide[] = [
         text: 'Because the frame and covering stay, foam replacement is one of the least disruptive jobs we do. In most cases it is finished on site in a single visit.',
       },
       { type: 'note',
-        text: 'If you are also changing the fabric, doing both at once usually makes sense — it is cheaper in labour than re-covering twice.',
+        text: 'If you are also changing the fabric, doing both at once usually makes sense â€” it is cheaper in labour than re-covering twice.',
       },
       { type: 'h2', text: 'Choosing the density' },
       {
         type: 'p',
-        text: 'Foam comes in different densities and this is where it is worth asking rather than assuming. A firm foam suits a sofa that gets heavy daily use or has children on it. A softer, higher-density foam feels better to sit on but can compress faster if the sofa is used hard every day. Tell us how the sofa is used — a formal living room seating four people a week is a very different case from a family sofa.',
+        text: 'Foam comes in different densities and this is where it is worth asking rather than assuming. A firm foam suits a sofa that gets heavy daily use or has children on it. A softer, higher-density foam feels better to sit on but can compress faster if the sofa is used hard every day. Tell us how the sofa is used â€” a formal living room seating four people a week is a very different case from a family sofa.',
       },
       {
         type: 'p',
@@ -220,9 +220,9 @@ export const guides: Guide[] = [
   {
     slug: 'how-to-choose-the-right-sofa-fabric',
     title: 'How to Choose the Right Sofa Fabric',
-    metaTitle: 'How to Choose the Right Sofa Fabric | Stylish Furnishing',
+    metaTitle: 'How to Choose the Right Sofa Fabric | Mizan Sofa Repair',
     metaDescription:
-      'A plain-language guide to sofa fabrics — what each one is like to live with, how hard it is to clean, and which suits your home in Gurugram.',
+      'A plain-language guide to sofa fabrics â€” what each one is like to live with, how hard it is to clean, and which suits your home in Gurugram.',
     excerpt:
       'Colour is the easy part. Here is what actually matters when you choose upholstery fabric: how it feels, how it wears and how hard it is to keep clean.',
     category: 'Fabric Guide',
@@ -237,10 +237,10 @@ export const guides: Guide[] = [
       {
         type: 'ul',
         items: [
-          'Family sofa, kids and everyday use — durability and easy cleaning come first.',
-          'Formal living room, used a few times a week — texture and feel matter more, but still pick something you can wipe.',
-          'Apartment or society where the sofa is shared by flatmates and guests — a hard-wearing, darker tone hides marks better.',
-          'Pet household — this is where light-coloured woven fabric causes ongoing frustration.',
+          'Family sofa, kids and everyday use â€” durability and easy cleaning come first.',
+          'Formal living room, used a few times a week â€” texture and feel matter more, but still pick something you can wipe.',
+          'Apartment or society where the sofa is shared by flatmates and guests â€” a hard-wearing, darker tone hides marks better.',
+          'Pet household â€” this is where light-coloured woven fabric causes ongoing frustration.',
         ],
       },
       { type: 'h2', text: 'The main fabric types you will be offered' },
@@ -251,11 +251,11 @@ export const guides: Guide[] = [
       {
         type: 'ul',
         items: [
-          'Cotton and linen blends — feel natural and breathable, look good in daylight, and show marks. Best for drier, lower-traffic rooms.',
-          'Polyester and microfibre woven fabrics — hard-wearing, colourfast, and usually the easiest to clean. A sensible default for family use.',
-          'Chenille — soft and slightly fuzzy, and it drapes well. It can pill over time, so ask how it wears.',
-          'Velvet and corduroy — the hardest to keep looking tidy, because the nap shows where people sit. They do look luxurious when new.',
-          'Canvas and heavy woven cloth — among the most durable options, and they improve rather than degrade with a patina of use.',
+          'Cotton and linen blends â€” feel natural and breathable, look good in daylight, and show marks. Best for drier, lower-traffic rooms.',
+          'Polyester and microfibre woven fabrics â€” hard-wearing, colourfast, and usually the easiest to clean. A sensible default for family use.',
+          'Chenille â€” soft and slightly fuzzy, and it drapes well. It can pill over time, so ask how it wears.',
+          'Velvet and corduroy â€” the hardest to keep looking tidy, because the nap shows where people sit. They do look luxurious when new.',
+          'Canvas and heavy woven cloth â€” among the most durable options, and they improve rather than degrade with a patina of use.',
         ],
       },
       { type: 'h2', text: 'Pattern is a commitment' },
@@ -270,7 +270,7 @@ export const guides: Guide[] = [
       { type: 'h2', text: 'Colour in a real room' },
       {
         type: 'p',
-        text: 'A useful rule: if your room gets strong daylight, a light fabric will go slightly yellow over a few years, and a very dark fabric will show every mark. Mid-tones — warm greys, oatmeal, camel, olive, warm taupe — are the most forgiving in most Indian homes, and they sit well with both wood and metal furniture.',
+        text: 'A useful rule: if your room gets strong daylight, a light fabric will go slightly yellow over a few years, and a very dark fabric will show every mark. Mid-tones â€” warm greys, oatmeal, camel, olive, warm taupe â€” are the most forgiving in most Indian homes, and they sit well with both wood and metal furniture.',
       },
       { type: 'h2', text: 'Ask these questions before you decide' },
       {
@@ -294,9 +294,9 @@ export const guides: Guide[] = [
   {
     slug: 'how-to-maintain-upholstered-furniture',
     title: 'How to Maintain Upholstered Furniture',
-    metaTitle: 'How to Maintain Upholstered Furniture | Stylish Furnishing',
+    metaTitle: 'How to Maintain Upholstered Furniture | Mizan Sofa Repair',
     metaDescription:
-      'Simple care habits for fabric and leatherette sofas and chairs that keep them looking good for longer. Practical advice from Stylish Furnishing, Gurugram.',
+      'Simple care habits for fabric and leatherette sofas and chairs that keep them looking good for longer. Practical advice from Mizan Sofa Repair, Gurugram.',
     excerpt:
       'Most upholstery problems are caused by small habits rather than bad luck. A short routine keeps a sofa looking new for years longer.',
     category: 'Care & Maintenance',
@@ -352,7 +352,7 @@ export const guides: Guide[] = [
       { type: 'h2', text: 'Cushions and covers' },
       {
         type: 'p',
-        text: 'Loose covers are the easiest part of a sofa to keep presentable, but only if they are washed. Check the care label and wash more often than feels necessary — covers take the brunt of the daily mess while the sofa underneath stays relatively clean.',
+        text: 'Loose covers are the easiest part of a sofa to keep presentable, but only if they are washed. Check the care label and wash more often than feels necessary â€” covers take the brunt of the daily mess while the sofa underneath stays relatively clean.',
       },
       {
         type: 'p',
@@ -365,9 +365,9 @@ export const guides: Guide[] = [
   {
     slug: 'leatherette-vs-fabric-sofa-upholstery',
     title: 'Leatherette vs Fabric Sofa Upholstery',
-    metaTitle: 'Leatherette vs Fabric Sofa Upholstery | Stylish Furnishing',
+    metaTitle: 'Leatherette vs Fabric Sofa Upholstery | Mizan Sofa Repair',
     metaDescription:
-      'A straight comparison of leatherette, rexine and fabric for sofa upholstery — cleaning, durability, comfort and how each one ages.',
+      'A straight comparison of leatherette, rexine and fabric for sofa upholstery â€” cleaning, durability, comfort and how each one ages.',
     excerpt:
       'Leatherette looks like leather and wipes clean in seconds. Fabric feels warmer and is often cheaper. Here is how to choose between them.',
     category: 'Fabric Guide',
@@ -376,7 +376,7 @@ export const guides: Guide[] = [
     blocks: [
       {
         type: 'p',
-        text: 'This comes up more than any other upholstery question, and there is no single right answer — it depends on the room, the household and how much maintenance you want to do. Here is an honest comparison.',
+        text: 'This comes up more than any other upholstery question, and there is no single right answer â€” it depends on the room, the household and how much maintenance you want to do. Here is an honest comparison.',
       },
       { type: 'h2', text: 'The short version' },
       {
@@ -399,7 +399,7 @@ export const guides: Guide[] = [
       { type: 'h2', text: 'How they wear' },
       {
         type: 'p',
-        text: 'Good leatherette creases rather than wears — it develops a slight sheen and softness in the areas people sit. Cheap leatherette is the opposite: it becomes shiny, sticky and cracked, and the surface starts peeling within a few years. Rexine is the budget version and generally wears faster than leatherette.',
+        text: 'Good leatherette creases rather than wears â€” it develops a slight sheen and softness in the areas people sit. Cheap leatherette is the opposite: it becomes shiny, sticky and cracked, and the surface starts peeling within a few years. Rexine is the budget version and generally wears faster than leatherette.',
       },
       {
         type: 'note',

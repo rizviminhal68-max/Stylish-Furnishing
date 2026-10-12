@@ -1,9 +1,9 @@
-/**
+﻿/**
  * ------------------------------------------------------------------
- * GALLERY — EDIT HERE
+ * GALLERY â€” EDIT HERE
  * ------------------------------------------------------------------
  * These are stock photographs, used as samples. No project
- * descriptions, locations or client names have been invented — each
+ * descriptions, locations or client names have been invented â€” each
  * caption describes only what the photograph shows, and the alt text
  * is written the same way.
  *
@@ -13,10 +13,10 @@
  *    portrait 3:4), naming them like
  *    "sofa-fabric-change-golf-course-road-01".
  * 3. Replace the entries below. `src` is the large file, `srcSm` is a
- *    smaller version for phones — having both keeps the page fast.
+ *    smaller version for phones â€” having both keeps the page fast.
  * 4. Write a real, specific `alt` for each photo. That is the single
  *    biggest thing that helps this page rank in image search.
- * 5. Update the "by Stylish Furnishing" wording in the Gallery page
+ * 5. Update the "by Mizan Sofa Repair" wording in the Gallery page
  *    meta description (src/pages/Gallery.tsx).
  */
 

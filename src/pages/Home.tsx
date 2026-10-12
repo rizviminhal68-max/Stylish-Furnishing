@@ -1,4 +1,4 @@
-import { site } from '@/config/site';
+﻿import { site } from '@/config/site';
 import { useSeo } from '@/lib/seo';
 import {
   faqSchema,
@@ -21,7 +21,7 @@ export default function Home() {
   useSeo({
     title: 'Premium Sofa & Furniture Repair in Gurugram',
     description:
-      'Stylish Furnishing provides professional sofa repair, upholstery and furniture furnishing services across Gurugram. Call or WhatsApp for service enquiries.',
+      'Mizan Sofa Repair provides professional sofa repair, upholstery and furniture furnishing services across Gurugram. Call or WhatsApp for service enquiries.',
     path: '/',
     jsonLd: [localBusinessSchema(), websiteSchema(), faqSchema()],
   });

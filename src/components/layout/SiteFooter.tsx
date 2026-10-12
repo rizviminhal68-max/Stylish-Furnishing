@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { MapPin, Phone } from 'lucide-react';
 import { copyrightYear, navLinks, site, whatsappLink } from '@/config/site';
 import { serviceAreas } from '@/data/serviceAreas';
@@ -28,7 +28,7 @@ export function SiteFooter() {
                 href={site.phone.href}
                 data-event="phone_click"
                 data-event-label="footer_call_now"
-                aria-label={`Call Stylish Furnishing on ${site.phone.display}`}
+                aria-label={`Call Mizan Sofa Repair on ${site.phone.display}`}
                 className="inline-flex items-center gap-2 rounded-full bg-sand-50 px-5 py-2.5 text-sm font-semibold text-ink-900 transition hover:bg-white"
               >
                 <Phone className="size-4" aria-hidden="true" />
@@ -40,7 +40,7 @@ export function SiteFooter() {
                 rel="noopener noreferrer"
                 data-event="whatsapp_click"
                 data-event-label="footer_whatsapp"
-                aria-label="Send a WhatsApp message to Stylish Furnishing"
+                aria-label="Send a WhatsApp message to Mizan Sofa Repair"
                 className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-2.5 text-sm font-semibold text-ink-900 transition hover:bg-whatsapp-dark hover:text-sand-50"
               >
                 <WhatsappGlyph className="size-4" />
@@ -129,7 +129,7 @@ export function SiteFooter() {
               href={site.phone.href}
               data-event="phone_click"
               data-event-label="footer_phone_number"
-              aria-label={`Call Stylish Furnishing on ${site.phone.display}`}
+              aria-label={`Call Mizan Sofa Repair on ${site.phone.display}`}
               className="mt-4 flex items-center gap-2 text-lg font-semibold text-sand-50 transition-colors hover:text-brass-300"
             >
               <Phone className="size-4 text-brass-400" aria-hidden="true" />

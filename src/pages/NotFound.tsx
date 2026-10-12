@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { ArrowRight, Home } from 'lucide-react';
 import { navLinks, site } from '@/config/site';
 import { useSeo } from '@/lib/seo';
@@ -8,7 +8,7 @@ import { CallButton, WhatsappButton } from '@/components/ui/CtaButtons';
 export default function NotFound() {
   useSeo({
     title: 'Page not found',
-    description: 'The page you were looking for could not be found. Browse our services or call Stylish Furnishing on ' + site.phone.display + '.',
+    description: 'The page you were looking for could not be found. Browse our services or call Mizan Sofa Repair on ' + site.phone.display + '.',
     path: '/404',
   });
 
@@ -26,7 +26,7 @@ export default function NotFound() {
             We could not find that page
           </h1>
           <p className="mx-auto mt-5 max-w-lg text-base leading-relaxed text-ink-200">
-            The link may be old or mistyped. Everything on the site is one click away below — or
+            The link may be old or mistyped. Everything on the site is one click away below â€” or
             call us and we will point you to the right place.
           </p>
 
