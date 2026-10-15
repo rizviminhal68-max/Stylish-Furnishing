@@ -1,4 +1,4 @@
-﻿import { site } from '@/config/site';
+import { site } from '@/config/site';
 import { useSeo } from '@/lib/seo';
 import { breadcrumbSchema, localBusinessSchema } from '@/lib/structuredData';
 import { Container } from '@/components/ui/Container';

@@ -1,4 +1,4 @@
-﻿import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { site } from '@/config/site';
 import { images } from '@/lib/images';

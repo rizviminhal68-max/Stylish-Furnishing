@@ -1,4 +1,4 @@
-﻿import { Camera, MapPin, Wrench } from 'lucide-react';
+import { Camera, MapPin, Wrench } from 'lucide-react';
 import { site } from '@/config/site';
 import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';

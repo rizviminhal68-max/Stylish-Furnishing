@@ -1,4 +1,4 @@
-﻿import { site } from '@/config/site';
+import { site } from '@/config/site';
 import { useSeo } from '@/lib/seo';
 import {
   faqSchema,

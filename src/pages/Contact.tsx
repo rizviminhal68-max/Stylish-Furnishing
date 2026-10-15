@@ -1,4 +1,4 @@
-﻿import { useMemo } from 'react';
+import { useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Clock, MapPin, MessageCircle, Phone } from 'lucide-react';
 import { site, whatsappLink } from '@/config/site';

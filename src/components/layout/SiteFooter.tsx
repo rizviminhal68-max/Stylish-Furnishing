@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { MapPin, Phone } from 'lucide-react';
 import { copyrightYear, navLinks, site, whatsappLink } from '@/config/site';
 import { serviceAreas } from '@/data/serviceAreas';

@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Home } from 'lucide-react';
 import { navLinks, site } from '@/config/site';
 import { useSeo } from '@/lib/seo';

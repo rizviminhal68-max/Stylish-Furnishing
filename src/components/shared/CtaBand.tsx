@@ -1,4 +1,4 @@
-﻿import type { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import { images } from '@/lib/images';
 import { site } from '@/config/site';
 import { Container } from '@/components/ui/Container';

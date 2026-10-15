@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Clock } from 'lucide-react';
 import { site } from '@/config/site';
 import { guides } from '@/data/guides';

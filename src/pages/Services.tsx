@@ -1,4 +1,4 @@
-﻿import { ArrowRight, Check } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { site } from '@/config/site';
 import { services } from '@/data/services';

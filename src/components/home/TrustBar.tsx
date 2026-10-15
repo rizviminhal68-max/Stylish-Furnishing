@@ -1,4 +1,4 @@
-﻿import { Home, Sofa, Building2, PhoneCall } from 'lucide-react';
+import { Home, Sofa, Building2, PhoneCall } from 'lucide-react';
 import { site } from '@/config/site';
 import { Container } from '@/components/ui/Container';
 

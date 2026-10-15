@@ -1,4 +1,4 @@
-﻿# Mizan Sofa Repair â€” website
+# Mizan Sofa Repair â€” website
 
 Marketing website for **Mizan Sofa Repair**, a sofa repair, upholstery and furniture
 furnishing business operating across Gurugram, Haryana.
@@ -46,25 +46,25 @@ substitute for a real browser check.
 
 ---
 
-## Before you launch â€” required changes
+## Before you launch — required changes
 
-Work through this list top to bottom. Items 1â€“3 are **blocking**.
+Work through this list top to bottom. Items 2 and 3 are **blocking**.
 
-### 1. Replace the placeholder domain
+### 1. Confirm the production domain
 
-The domain `https://www.stylishfurnishing.in` is a **placeholder**. It appears in
-four files. Change all four, then rebuild.
+The site is live on `https://mizansofa.vercel.app`. The domain appears in
+four files. If you move to a custom domain, change all four, then rebuild.
 
 | File | What to change |
 | --- | --- |
-| `src/config/site.ts` | `site.domain` â€” used for canonical tags, Open Graph URLs and JSON-LD |
+| `src/config/site.ts` | `site.domain` — used for canonical tags, Open Graph URLs and JSON-LD |
 | `index.html` | 3 places: `<link rel="canonical">`, `og:url`, `og:image` |
 | `public/robots.txt` | 2 places: the header comment and the `Sitemap:` line |
 | `public/sitemap.xml` | every `<loc>`, plus the comment at the top |
 
 ```bash
 # quick way to confirm nothing was missed
-grep -rn "stylishfurnishing.in" src index.html public
+grep -rn "mizansofa.vercel.app" src index.html public
 ```
 
 ### 2. Replace the placeholder photography
@@ -183,8 +183,8 @@ public/
   fonts/            self-hosted variable fonts (no Google Fonts request)
   images/           photography â€” REPLACE BEFORE LAUNCH
   favicon.svg
-  robots.txt        domain is a placeholder
-  sitemap.xml       domain is a placeholder
+  robots.txt        production domain
+  sitemap.xml       production domain
   _redirects        SPA fallback for Netlify/Cloudflare
   .htaccess         SPA fallback + caching + security headers for Apache
 

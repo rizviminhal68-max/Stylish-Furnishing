@@ -1,4 +1,4 @@
-﻿import { useState, type FormEvent } from 'react';
+import { useState, type FormEvent } from 'react';
 import { LoaderCircle, Send, ShieldCheck } from 'lucide-react';
 import { site, whatsappLink } from '@/config/site';
 import { serviceOptions } from '@/data/services';

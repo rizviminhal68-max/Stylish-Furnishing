@@ -1,4 +1,4 @@
-﻿import { MessageCircle, Phone } from 'lucide-react';
+import { MessageCircle, Phone } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { site, whatsappLink } from '@/config/site';
 import { ButtonLink, type ButtonSize, type ButtonVariant } from './ButtonLink';

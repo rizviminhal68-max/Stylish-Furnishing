@@ -1,4 +1,4 @@
-﻿import { Check, Clock, ShieldCheck } from 'lucide-react';
+import { Check, Clock, ShieldCheck } from 'lucide-react';
 import { site } from '@/config/site';
 import { images } from '@/lib/images';
 import { trustPoints } from '@/data/whyChooseUs';

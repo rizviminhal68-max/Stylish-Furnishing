@@ -1,4 +1,4 @@
-﻿import { MapPin, PhoneCall } from 'lucide-react';
+import { MapPin, PhoneCall } from 'lucide-react';
 import { site } from '@/config/site';
 import { serviceAreas } from '@/data/serviceAreas';
 import { images } from '@/lib/images';

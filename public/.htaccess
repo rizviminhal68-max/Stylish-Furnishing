@@ -1,4 +1,4 @@
-﻿# Mizan Sofa Repair â€” Apache config (Hostinger, GoDaddy, cPanel, shared hosting).
+# Mizan Sofa Repair â€” Apache config (Hostinger, GoDaddy, cPanel, shared hosting).
 # Rewrite every request that is not a real file to index.html so that
 # React Router routes such as /contact and /guides/<slug> work on refresh.
 
@@ -8,9 +8,9 @@
 
   # Force HTTPS and strip www so there is only one canonical URL.
   RewriteCond %{HTTPS} !=on
-  RewriteRule ^(.*)$ https://stylishfurnishing.in/$1 [R=301,L]
-  RewriteCond %{HTTP_HOST} ^www\.stylishfurnishing\.in$ [NC]
-  RewriteRule ^(.*)$ https://stylishfurnishing.in/$1 [R=301,L]
+  RewriteRule ^(.*)$ https://mizansofa.vercel.app/$1 [R=301,L]
+  RewriteCond %{HTTP_HOST} ^www\.mizansofa\.vercel\.app$ [NC]
+  RewriteRule ^(.*)$ https://mizansofa.vercel.app/$1 [R=301,L]
 
   # Never rewrite real files or directories.
   RewriteCond %{REQUEST_FILENAME} -f [OR]

@@ -1,19 +1,18 @@
-﻿/**
+/**
  * ------------------------------------------------------------------
  * SINGLE SOURCE OF TRUTH FOR BUSINESS DETAILS
  * ------------------------------------------------------------------
  * Change the business name, phone number, WhatsApp number or domain
  * here and the whole website updates automatically.
  *
- * NOTE FOR THE DEVELOPER: the `domain` below is a PLACEHOLDER.
- * Replace it with the real production domain before going live, then
- * rebuild. `public/robots.txt` and `public/sitemap.xml` also contain
- * the domain and must be updated by hand.
+ * NOTE FOR THE DEVELOPER: the `domain` below is the live deployment URL.
+ * If the site ever moves to a custom domain, update it here, rebuild, and
+ * update `public/robots.txt` and `public/sitemap.xml` by hand.
  */
 
 export const site = {
   name: 'Mizan Sofa Repair',
-  domain: 'https://www.stylishfurnishing.in',
+  domain: 'https://mizansofa.vercel.app',
 
   /** Phone number. `national` is digits only (used for tel: and wa.me). */
   phone: {

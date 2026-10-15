@@ -1,12 +1,11 @@
-﻿# Mizan Sofa Repair â€” https://www.stylishfurnishing.in
+# Mizan Sofa Repair — https://mizansofa.vercel.app
 #
-# CHANGE THE SITEMAP URL BELOW to the real production domain before launch.
-# The same domain appears in: src/config/site.ts, index.html (canonical and
-# og:url) and public/sitemap.xml.
+# This domain must stay in step with src/config/site.ts, index.html
+# (canonical and og:url) and public/sitemap.xml.
 
 User-agent: *
 Allow: /
 
 # No admin, API or draft areas exist on this site, so nothing is disallowed.
 
-Sitemap: https://www.stylishfurnishing.in/sitemap.xml
+Sitemap: https://mizansofa.vercel.app/sitemap.xml
